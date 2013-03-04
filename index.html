@@ -14,9 +14,13 @@
 
     <h4>Search</h4>
     <p><input type="text" ng-model="query"></p>
+    <p><select ng-model="order">
+      <option value="name">Alpha</option>
+      <option value="id">Id</option>
+    </select></p>
     <p>Current filter : {{query}}</p>
     <ul>
-      <li ng-repeat="phone in phones | filter:query">{{phone.name}}</li>
+      <li ng-repeat="phone in phones | filter:query | orderBy:order ">{{phone.name}}</li>
     </ul>
     <p> Number of search results : {{(phones | filter:query).length}}</p>
   </body>

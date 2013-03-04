@@ -1,13 +1,15 @@
 function PhonelistCtrl($scope){
   $scope.phones = [
     {
-      "name": "Nexus"
+      "name": "Nexus", "id":1
     },
     {
-      "name": "iPhone"
+      "name": "iPhone", "id":2
     },
     {
-      "name": "Samsung"
+      "name": "Samsung", "id":3
     }
   ];
+
+  $scope.order = "id";
 }
