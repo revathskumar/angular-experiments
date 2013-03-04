@@ -1,0 +1,8 @@
+{
+  "name": "first_angular_project",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "0.0.4"
+  }
+}

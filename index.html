@@ -1,0 +1,14 @@
+<html ng-app>
+  <head>
+    <title>First Angular app</title>
+    <script src="js/lib/angular/angular.min.js"></script>
+    <script src="js/controllers/phonelist.js"></script>
+  </head>
+  <body ng-controller="PhonelistCtrl">
+    <p>Nothing here {{ "yet " + "!!" }}</p>
+    <p>1 + 2 = {{ 1 + 2 }}</p>
+    <ul >
+      <li ng-repeat="phone in phones">{{phone.name}}</li>
+    </ul>
+  </body>
+</html>
