@@ -10,5 +10,14 @@
     <ul >
       <li ng-repeat="phone in phones">{{phone.name}}</li>
     </ul>
+    <p> Total number of phones : {{phones.length}}</p>
+
+    <h4>Search</h4>
+    <p><input type="text" ng-model="query"></p>
+    <p>Current filter : {{query}}</p>
+    <ul>
+      <li ng-repeat="phone in phones | filter:query">{{phone.name}}</li>
+    </ul>
+    <p> Number of search results : {{(phones | filter:query).length}}</p>
   </body>
 </html>
